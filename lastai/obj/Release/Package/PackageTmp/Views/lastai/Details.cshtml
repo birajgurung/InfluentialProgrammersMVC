@@ -1,0 +1,79 @@
+﻿@model lastai.Models.lastaiTable
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Programmer</h2>
+<head>
+    <link rel="stylesheet" href="~/Content/Details.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700italic,700,500italic,500,300,300italic,400italic' rel='stylesheet' type='text/css'>
+</head>
+<div>
+    <div class="container">
+        <hr />
+        <div class="col-md-2">
+            <br />
+            <img src="@Url.Content(Model.Picture)" width="150" height="150" />
+        </div>
+       
+        <div class="col-md-9">
+            <dl class="dl-horizontal">
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Name)
+
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Nationality)
+
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Nationality)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Born)
+
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Born)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Title)
+
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Title)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Profession)
+
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Profession)
+                </dd>
+               
+                <dt>
+                    @Html.DisplayNameFor(model => model.Quote)
+
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Quote)
+                </dd>
+
+            </dl>
+        </div>
+        <div class="col-md-1">
+
+        </div>
+    </div>
+    <br />
+    @Html.DisplayFor(model=>model.Long_Description)
+    <br />
+    <br />
+    <center> @Html.ActionLink("Back to Home Page", "Index")</center>
+</div>

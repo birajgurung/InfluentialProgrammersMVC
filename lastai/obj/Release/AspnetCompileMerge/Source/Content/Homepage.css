@@ -1,0 +1,42 @@
+﻿body {
+    background-color:whitesmoke;
+
+
+}
+
+h2{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.first{
+    font-style:italic;
+    color:midnightblue;
+    font-size:medium;
+    font-weight:600;
+    
+}
+.second{
+    font-style:italic;
+    color:grey;
+    font-size:medium;
+    font-weight:400;
+    
+}
+td{
+    
+    font-family: 'Roboto', sans-serif;
+    font-size:medium;
+}
+th{
+    background-color:#333;
+    color:whitesmoke;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:large;
+}
+tr:hover {
+  background-color:gainsboro;
+}
+p.addaprogrammer{
+         font-family: 'Roboto', sans-serif;
+         font-size:medium;
+}
+

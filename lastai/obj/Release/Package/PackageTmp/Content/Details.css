@@ -1,0 +1,17 @@
+﻿body {
+    font-family: 'Roboto', sans-serif;
+    font-size:large
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-style:italic;
+    color:grey;
+    font-size:medium;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+}
+dl.dl-horizontal{
+    font-size:medium;
+}

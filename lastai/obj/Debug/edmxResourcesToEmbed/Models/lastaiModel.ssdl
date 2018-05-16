@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="lastaiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="lastaiTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Picture" Type="varchar(max)" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nationality" Type="nvarchar" MaxLength="50" />
+    <Property Name="Born" Type="nvarchar" MaxLength="50" />
+    <Property Name="Quote" Type="varchar(max)" />
+    <Property Name="Profession" Type="nvarchar" MaxLength="50" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" />
+    <Property Name="Short_Description" Type="varchar(max)" />
+    <Property Name="Long_Description" Type="varchar(max)" />
+    <Property Name="Comment" Type="varchar(max)" />
+  </EntityType>
+  <EntityContainer Name="lastaiModelStoreContainer">
+    <EntitySet Name="lastaiTable" EntityType="Self.lastaiTable" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
